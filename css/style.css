@@ -1,7 +1,7 @@
 @font-face {
-	font-family: "android-euclid";
-	src: url("./fonts/eu_reg.ttf"), url("./fonts/eu_bol.ttf"),
-		url("./fonts/eu_sem.ttf"), url("./fonts/eu_med.ttf");
+	font-family: "googlesans";
+	src: url("../fonts/GoogleSans-Regular.ttf"),
+		url("../fonts/GoogleSans-Bold.ttf"), url("../fonts/GoogleSans-Medium.ttf");
 }
 
 html {
@@ -20,7 +20,8 @@ html {
 
 body {
 	margin: 0;
-	font-family: android-euclid, sans-serif;
+	padding: 0;
+	font-family: googlesans, sans-serif;
 }
 
 .navbar {
@@ -82,14 +83,14 @@ body {
 }
 
 .navbar-2 {
-	width: 100vw;
-	/* padding: 20px; */
+	width: 100%;
 }
 
 .nav-links-second {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
+	margin-left: -40px;
 }
 
 .nav-links-second li {
@@ -97,14 +98,16 @@ body {
 	justify-content: center;
 	align-items: center;
 	list-style: none;
-	width: 200px;
-	height: 30px;
+	width: 225px;
+	height: 40px;
 	background-color: orange;
 }
 
 .nav-links-second a {
 	text-transform: uppercase;
 	text-decoration: none;
+	font-weight: bold;
+	color: aliceblue;
 }
 
 .burger {
@@ -197,6 +200,7 @@ body {
 .card .product-details h3 {
 	font-size: 18px;
 	margin: 5px 0;
+	color: #333;
 }
 
 .card .product-details .rating {
