@@ -101,6 +101,18 @@ body {
 	width: 225px;
 	height: 40px;
 	background-color: orange;
+	transition: 0.3s ease-in-out;
+}
+
+.nav-links-second li:hover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	width: 225px;
+	height: 40px;
+	background-color: red;
+	cursor: pointer;
 }
 
 .nav-links-second a {
