@@ -1,0 +1,415 @@
+@font-face {
+	font-family: "android-euclid";
+	src: url("./fonts/eu_reg.ttf"), url("./fonts/eu_bol.ttf"),
+		url("./fonts/eu_sem.ttf"), url("./fonts/eu_med.ttf");
+}
+
+html {
+	scrollbar-width: none;
+	/* Firefox */
+	-ms-overflow-style: none;
+	/* IE 10+ */
+	overflow: -moz-scrollbars-none;
+	/* Firefox */
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+
+body {
+	margin: 0;
+	font-family: android-euclid, sans-serif;
+}
+
+.navbar {
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px;
+}
+
+.logo a {
+	color: #000;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+.search-container {
+	/* position: relative; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid orange;
+	border-radius: 20px;
+}
+
+.search-container input[type="text"] {
+	width: 200px;
+	padding: 8px;
+	border: none;
+	border-radius: 20px;
+}
+
+.search-container button {
+	padding: 8px 12px;
+	background-color: transparent;
+	border: none;
+	color: orange;
+	cursor: pointer;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 30%;
+}
+
+.nav-links li {
+	list-style: none;
+}
+
+.nav-links a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: orange;
+	text-decoration: none;
+}
+
+.navbar-2 {
+	width: 100vw;
+	/* padding: 20px; */
+}
+
+.nav-links-second {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav-links-second li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	width: 200px;
+	height: 30px;
+	background-color: orange;
+}
+
+.nav-links-second a {
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+}
+
+.burger .line {
+	width: 25px;
+	height: 3px;
+	background-color: #000;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+
+.banner-1 {
+	width: 100%;
+	height: 100%;
+}
+
+.banner-1 > a > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 5px;
+	padding: 10px;
+}
+
+.grid > div {
+	background-color: #fff;
+	padding: 10px;
+}
+
+.grid > div > a > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.display1 {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.h1 {
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+	line-height: 1px;
+}
+
+.btn > button {
+	padding: 10px 15px;
+	background-color: #d8412e;
+	border: none;
+	border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.card {
+	width: 250px;
+	height: auto;
+	border-radius: 25px;
+	padding: 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+	border-radius: 25px;
+}
+
+.card .product-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.card .product-details h3 {
+	font-size: 18px;
+	margin: 5px 0;
+}
+
+.card .product-details .rating {
+	color: #ffa500;
+}
+
+.card .product-details .price {
+	font-weight: bold;
+	margin-top: 10px;
+	color: tomato;
+}
+
+.card .add-to-cart {
+	width: 93%;
+	background-color: rgb(219, 219, 219);
+	color: #000;
+	border: none;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: 0.2s ease-in-out;
+}
+
+.card .add-to-cart:hover {
+	width: 93%;
+	background-color: rgb(255, 0, 0);
+	color: #ffffff;
+	border: none;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.grid-1 {
+	display: grid;
+	place-items: center;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 5px;
+	padding: 10px;
+}
+
+.grid-1 > div {
+	background-color: #fff;
+	padding: 10px;
+}
+
+.grid-1 > div > a > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.carousel {
+	width: 100vw;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+
+.carousel-container {
+	display: flex;
+	transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+	flex: 0 0 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.carousel img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.carousel-indicators {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.carousel-indicator {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #888;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.carousel-indicator.active {
+	background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+	.nav-links {
+		width: 60%;
+	}
+
+	.navbar {
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100px;
+	}
+
+	.nav-links-second {
+		flex-direction: column;
+		justify-content: center !important;
+	}
+
+	body > nav.navbar2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.nav-links {
+		position: absolute;
+		right: 0;
+		height: 90vh;
+		width: 100vw !important;
+		top: 15vh;
+		background-color: lavender;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 30vw;
+		transform: translateX(100%);
+		transition: transform 0.3s ease-in;
+	}
+
+	.nav-links li {
+		opacity: 0;
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.card {
+		width: 100px;
+		height: auto;
+		border-radius: 25px;
+		padding: 20px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	}
+
+	.grid-1 {
+		display: grid;
+		place-items: center;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 5px;
+		padding: 10px;
+	}
+
+	.grid-1 > div {
+		background-color: #fff;
+		padding: 2px;
+	}
+
+	.grid-1 > div > a > img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.display1 {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.h1 > h1 {
+		font-size: 20px;
+	}
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
