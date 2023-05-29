@@ -168,6 +168,7 @@ body {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	margin-top: 10px;
 }
 
 .h1 {
@@ -279,7 +280,7 @@ body {
 
 .carousel {
 	width: 100vw;
-	height: 500px;
+	height: auto;
 	overflow: hidden;
 	position: relative;
 }
