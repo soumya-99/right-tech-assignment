@@ -30,6 +30,8 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 25px;
+	font-size: 0.8em;
+	text-transform: uppercase;
 }
 
 .logo a {
