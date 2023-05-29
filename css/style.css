@@ -393,6 +393,12 @@ footer {
 	text-transform: uppercase;
 }
 
+.last > span > a {
+	color: lavender;
+	text-transform: lowercase;
+	text-decoration: none;
+}
+
 /* Responsive Styling */
 @media only screen and (max-width: 768px) {
 	.footer-section {
