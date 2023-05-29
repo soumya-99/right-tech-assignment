@@ -421,13 +421,6 @@ footer {
 	text-decoration: none;
 }
 
-/* Responsive Styling */
-@media only screen and (max-width: 768px) {
-	.footer-section {
-		flex: 0 0 50%;
-	}
-}
-
 @media screen and (max-width: 768px) {
 	.nav-links {
 		transition: 0.3s ease-in-out !important;
@@ -455,6 +448,10 @@ footer {
 	.grid-2 {
 		grid-template-columns: repeat(1, 1fr);
 		justify-items: center;
+	}
+
+	.footer-section {
+		flex: 0 0 50%;
 	}
 }
 
