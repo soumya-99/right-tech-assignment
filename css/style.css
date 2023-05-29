@@ -510,6 +510,10 @@ footer {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	.card .product-details .rating {
+		margin-right: 60px;
+	}
+
 	.grid-1 {
 		display: grid;
 		place-items: center;
