@@ -1,4 +1,3 @@
-# Main Preview of dummy Site.
+# Main Preview of dummy Site
 ___
-
-![whole_page](./img/website.png)
+Assigned by Subhajit Saha.
