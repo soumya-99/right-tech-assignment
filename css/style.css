@@ -406,6 +406,11 @@ hr {
 	list-style-type: "🌹";
 }
 
+.links-ref > ul > li > a {
+	text-decoration: none;
+	color: #333;
+}
+
 footer {
 	background-color: #ffe0e0;
 	/* text-align: center; */
