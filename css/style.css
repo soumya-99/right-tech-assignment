@@ -322,6 +322,8 @@ body {
 
 @media screen and (max-width: 768px) {
 	.nav-links {
+		transition: 0.3s ease-in-out !important;
+		display: none !important;
 		width: 60%;
 	}
 
@@ -416,6 +418,7 @@ body {
 }
 
 .nav-active {
+	display: flex !important;
 	transform: translateX(0%);
 }
 
